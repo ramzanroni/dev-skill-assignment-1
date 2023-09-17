@@ -54,7 +54,7 @@ echo '<hr>';
 
 $encodedStudents=json_encode($students);
 echo "Encoded students json:<br>". $encodedStudents.'<hr>';
-
+echo "<h1>After decode:</h1>";
 $decodeStudents=json_decode($encodedStudents);
 foreach ($decodeStudents as $student) {
     echo "Name: ". $student->name.'<br>';
